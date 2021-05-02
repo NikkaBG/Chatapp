@@ -1,21 +1,21 @@
 import React, {useContext, useState} from 'react';
-import {
-  Text,
-  TouchableOpacity,
-  Image,
-  Platform,
-  StyleSheet,
-  ScrollView
-} from 'react-native';
+import { Text, TouchableOpacity, Image, StyleSheet, ScrollView} from 'react-native';
 
 import FormInput from '../components/FormInput';
 import FormBotton from '../components/FormBotton';
 import SocialButton from '../components/SocialButton';
-//import {AuthContext} from '../navigation/AuthProvider';
+import Loading from '../components/Loading';
+import {AuthContext} from '../navigation/AuthProvider';
 
 const LoginScreen = ({navigation}) => {
     const [email, setEmail] = useState();
     const [password, setpassword] = useState();
+
+    const {login, loading } = useContext(AuthContext);
+
+    if (loading) {
+        return <Loading />;
+    }
 
     return (
         <ScrollView contentContainerStyle={styles.container}>
@@ -28,21 +28,21 @@ const LoginScreen = ({navigation}) => {
                 labelValue={email}
                 onChangeText={(userEmail) => setEmail(userEmail)}
                 placeholderText="Email"
-                iconType="user"
+                iconType="mail"
                 keyboardType="email-address"
                 autoCapitalize="none"
                 autoCorrect={false}
             />
             <FormInput
                 labelValue={password}
-                onChangeText={(userPassword) => setPassword(userPassword)}
+                onChangeText={(userPassword) => setpassword(userPassword)}
                 placeholderText="Password"
                 iconType="lock"
                 secureTextEntry={true}
             />
             <FormBotton
                 buttonTitle="Sign In"
-                onPress={() => alert ('Sign In Clicked')}
+                onPress={() => login(email, password)}
             />
             <TouchableOpacity style={styles.forgotButton} onPress={() => {}}>
                 <Text style={styles.navButtonText}>Forgot Password?</Text>

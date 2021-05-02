@@ -2,9 +2,9 @@ import React from 'react';
 
 function ChatScreen(props) {
     return (
-        <div>
-            
-        </div>
+        <View style={styles.container}>
+      <Text>Chat screen</Text>
+    </View>
     );
 }
 
