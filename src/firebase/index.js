@@ -10,11 +10,11 @@ const firebaseConfig = {
     storageBucket: "chatapp-bb409.appspot.com",
     messagingSenderId: "448051884835",
     appId: "1:448051884835:web:b6fe7bb4379d0f935b9296"
-  };
+};
 
-  // Check if firebase is initialise, if not do so
+// Check if firebase is initialise, if not do so
 if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
 }
 
 export { firebase };
