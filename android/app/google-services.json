@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "448051884835",
+    "project_id": "chatapp-bb409",
+    "storage_bucket": "chatapp-bb409.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448051884835:android:a0fff7e2cf596bb85b9296",
+        "android_client_info": {
+          "package_name": "com.kantonine.Chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448051884835-7potfkahrfbvrddbbudt4t3vjvv2feku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kantonine.Chatapp",
+            "certificate_hash": "cd6db2fc2ca172347e2511166e587a6f972bbb63"
+          }
+        },
+        {
+          "client_id": "448051884835-bg3kv846e9d5kfdhep8gvp55mer3ue06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsDcG8vNEtX0f5Pm1bGoTjof8UHb_mWC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448051884835-bg3kv846e9d5kfdhep8gvp55mer3ue06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

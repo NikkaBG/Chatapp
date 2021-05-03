@@ -14,7 +14,7 @@ const firebaseConfig = {
 
   // Check if firebase is initialise, if not do so
 if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
 }
 
 export { firebase };

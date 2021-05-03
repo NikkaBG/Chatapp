@@ -23,7 +23,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.kantonine.Chatapp",
+      "googleServicesFile": "./android/app/google-services.json"
     },
     "web": {
       "favicon": "./src/assets/favicon.png"
