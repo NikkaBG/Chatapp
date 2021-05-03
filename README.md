@@ -14,3 +14,9 @@ Der er helt klart endnu en som har haft en god idé.
 Så tjekkede jeg op på Github og fulgte deres toturial for getting startet.
 
 Næste skridt bestod i at finde ud af hvad react native egentlig var. Her fandt jeg ud af det byggede på et sprog, som byggede på et sprog, som byggede... i forstår hvad jeg mener. Men det korte og det lange af, det var alle programmerings sprog jeg intet kendte til.
+
+Så allerede her kunne jeg se det ville blive en udfordrig og det ville tage tid men jeg skulle nok løse det. Men det ville nok tage noget længere tid end jeg først havde antaget. Jeg ville sagtens kunne klippe klistre en masse kode fra nettet men det ville jeg jo ikke få en ordentlig forståelse af. En forståelse af hvorfor tingene var sat sammen på en bestemt måde ville være vigtigt for at fremadrettet kunne benytte sig af de forskellige funktioner på en ordentlig måde.
+
+Så jeg besluttede mig for at gå all in og bruge den tid det krævede for at få en ordentlig forståelse af koden.
+
+Ret hurtigt fandt jeg ud af at jeg skulle benytte mig af expo.
