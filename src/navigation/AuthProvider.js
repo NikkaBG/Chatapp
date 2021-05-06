@@ -1,6 +1,6 @@
 import React, {createContext, useState} from 'react';
-import { Alert } from 'react-native';
 import { firebase } from '../firebase';
+import firestore from '@react-native-firebase/firestore';
 
 export const AuthContext = createContext();
 
@@ -34,13 +34,12 @@ export const AuthProvider = ({children}) => {
                     setLoading(true);
                     try {
                         await firebase.auth().createUserWithEmailAndPassword(email, password)
-                        .then(() => {
+                        .then((credentials) => {
                             //Once the user creation has happened successfully, we can add the currentUser into firestore
                             //with the appropriate details.
                             firestore().collection('users').doc(auth().currentUser.uid)
                             .set({
                                 fname: fName,
-                                lname: '',
                                 email: email,
                                 createdAt: firestore.Timestamp.fromDate(new Date()),
                                 userImg: null,

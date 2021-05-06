@@ -7,7 +7,7 @@ import SocialButton from '../components/SocialButton';
 import Loading from '../components/Loading';
 import {AuthContext} from '../navigation/AuthProvider';
 
-const SignupScreen = () => {
+const SignupScreen = ({navigation}) => {
     const [fName, setfName] = useState('');
     const [email, setEmail] = useState();
     const [password, setpassword] = useState();
@@ -25,7 +25,7 @@ const SignupScreen = () => {
             <FormInput
                 labelValue={fName}
                 onChangeText={(userfName) => setfName(userfName)}
-                placeholderText="Your Name"
+                placeholderText="Enter your name"
                 iconType="user"
                 autoCapitalize="words"
                 autoCorrect={false}
